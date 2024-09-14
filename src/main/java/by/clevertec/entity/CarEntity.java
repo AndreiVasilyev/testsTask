@@ -9,9 +9,10 @@ import java.awt.*;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-@Data
+
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 public class CarEntity {
     private UUID uuid;
     private Body body;
