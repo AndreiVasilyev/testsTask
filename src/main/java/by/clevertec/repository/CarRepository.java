@@ -57,6 +57,6 @@ public class CarRepository {
                 .filter(carEntity -> carEntity.getUuid().equals(carId))
                 .findFirst();
         updatedCar.ifPresent(carEntity -> dbCars.set(dbCars.indexOf(carEntity), newCar));
-        return updatedCar;
+        return Optional.of(newCar);
     }
 }
